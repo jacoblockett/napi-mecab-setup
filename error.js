@@ -9,7 +9,7 @@ const ErrUnsupportedSystem = system => exit(`napi-mecab is compatible with win32
 const ErrMissingNapiMecabPackage = pkgRoot => exit(
     `"${pkgRoot}" does not exist!`,
     "You must run napi-mecab-setup from within the root directory of a node project with napi-mecab installed already.",
-    `Use "pnpm install napi-mecab" or equivalent to install the package first.`
+    `Use "npm install napi-mecab" or equivalent to install the package first.`
 )
 const ErrAPIRequestFailed = (url, res) => exit(`Request to ${url} failed due to status code ${res.status} (${res.statusText}). Try again in a few minutes. If the issue persists, submit an issue at https://github.com/jacoblockett/napi-mecab-setup/issues.`)
 const ErrMissingAsset = name => `Couldn't find asset for ${name}.`
