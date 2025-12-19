@@ -12,8 +12,8 @@ const ErrMissingNapiMecabPackage = pkgRoot => exit(
     `Use "npm install napi-mecab" or equivalent to install the package first.`
 )
 const ErrAPIRequestFailed = (url, res) => exit(`Request to ${url} failed due to status code ${res.status} (${res.statusText}). Try again in a few minutes. If the issue persists, submit an issue at https://github.com/jacoblockett/napi-mecab-setup/issues.`)
-const ErrMissingAsset = name => `Couldn't find asset for ${name}.`
-const ErrWriteFailed = (writePath, err) => `Failed to write to ${writePath}: ${err.message}`
+const ErrMissingAsset = name => exit(`Couldn't find asset for ${name}.`)
+const ErrWriteFailed = (writePath, err) => exit(`Failed to write to ${writePath}: ${err.message}`)
 
 module.exports = {
     ErrUnsupportedLanguageCode,
