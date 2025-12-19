@@ -65,7 +65,7 @@ const SUPPORTED_LANGUAGES = {
 
 	if (!prebuildAsset) ErrMissingAsset(prebuildAssetName)
 
-	prebuildAsset.outPath = path.join(pkgRoot, "prebuilds", `${system}`)
+	prebuildAsset.outPath = path.join(pkgRoot, "prebuilds", system)
 
 	const dictionaryAssets = languageCodes.map(code => {
 		const dictionaryAssetName = `${code}-dict.zip`
