@@ -32,3 +32,14 @@ npx napi-mecab-setup ru
 | -------- | ------------- |
 | Japanese | jp            |
 | Korean   | ko            |
+
+## Note on a Particular Error
+
+If your setup failed, you may encounter an error that looks like this:
+
+```bash
+# ... Other error messages above
+Assertion failed: !(handle->flags & UV_HANDLE_CLOSING), file src\win\async.c, line 76
+```
+
+This is bug with the Nodejs runtime - you can ignore it and use the messages above it to determine why the setup failed.

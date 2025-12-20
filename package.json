@@ -5,6 +5,7 @@
 	"bin": {
 		"napi-mecab-setup": "./napi-mecab-setup.js"
 	},
+	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -19,6 +20,7 @@
 	"packageManager": "pnpm@10.21.0",
 	"dependencies": {
 		"adm-zip": "^0.5.16",
-		"axios": "^1.13.2"
+		"axios": "^1.13.2",
+		"cli-progress": "^3.12.0"
 	}
 }
