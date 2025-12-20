@@ -5,6 +5,10 @@
 	"bin": {
 		"napi-mecab-setup": "./napi-mecab-setup.js"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jacoblockett/napi-mecab-setup"
+	},
 	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
