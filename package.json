@@ -19,6 +19,13 @@
 		"script",
 		"scripts"
 	],
+	"files": [
+		"utils/",
+		"error.js",
+		"LICENSE",
+		"napi-mecab-setup.js",
+		"README.md"
+	],
 	"author": "Jacob Lockett",
 	"license": "MIT",
 	"packageManager": "pnpm@10.21.0",
